@@ -24,6 +24,56 @@
 
         <main>
             <h1>Contact Us</h1>
+
+            <h2>Location</h2>
+            <p>Lorem ipsum dolor sit amet, in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <h2>Hours</h2>
+            <p>Lorem ipsum dolor sit amet, in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <h2>Preorder or Inquiry</h2>
+            <form action="#" method="post">
+                
+                <fieldset>
+                    
+                    <legend>Bakery Order / Inquiry</legend>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required></input>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required></input>
+                    </p>
+                    
+                    <p>
+                        <label for="pickup-date">Pickup Date:</label>
+                        <input type="date" id="pickup-date" name="pickup-date" required></input>
+                    </p>
+
+                    <p>
+                        <label for="email">Request Type:</label>
+                        <select id="request-type" name="request-type" required>
+                            <option value="">Select an option</option>
+                            <option value="preorder">Preorder</option>
+                            <option value="general-question">General Question</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="item-details">Item Details:</label>
+                        <textarea id="item-details" name="item-details" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="allergy-notes">Allergy Notes:</label>
+                        <textarea id="allergy-notes" name="allergy-notes"></textarea>
+                    </p>
+
+                    <button typew="submit">Submit Request</button>
+                </fieldset>
+            </form>
         </main>
 
         <footer>
