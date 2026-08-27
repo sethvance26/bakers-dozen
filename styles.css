@@ -5,6 +5,7 @@
     --color-primary: #b48663;
     --color-accent: #b19274;
     --color-text: #202020;
+    --color-form: #cdcdcd;
 }
 
 body {
@@ -102,11 +103,16 @@ textarea {
 }
 
 form {
-    background-color: var(--color-accent);
+    background-color: var(--color-form);
     border: 1px solid;
     padding: 8px;
     border-radius: 4px;
     box-shadow: rgb(131 122 122 / 20%) 3px 3px 29px 0px;
+}
+
+form button {
+    background-color: var(--color-background);
+    padding: 4px;
 }
 
 /* Media Queries */
