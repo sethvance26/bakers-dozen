@@ -86,34 +86,71 @@ figcaption {
     font-style: italic;
 }
 
-/* Product Page */
-
-.product-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.product-content p {
-    margin-top: 5px;
-}
-
-.product-content img {
-    width: 600px;
-    height: 600px;
-}
-
 .product-info div {
-    padding-top: 40px;
+    padding-bottom: 12px;
 }
 
+
+input {
+    width: 100%;
+    height: 20px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+}
+
+form {
+    background-color: #d9d5d5;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: rgb(131 122 122 / 20%) 3px 3px 29px 0px;
+}
 
 /* Media Queries */
+
+@media(min-width:1024px) {
+    form {
+        width: 50%;
+    }
+}
 
 @media (min-width: 768px) {
     ul {
         flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    ul {
+        padding:0;
+    }
+
+    .primary-content img {
+        width: 250px;
+        height: 250px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .product-info div {
+        padding-top: 4px;
+        border-top: 1px solid;
+    }
+
+    textarea {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    textarea {
+        width: 200px;
+        height: 100px;
     }
 }
