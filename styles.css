@@ -10,15 +10,24 @@ body {
     color: var(--color-text);
 }
 
-header {
+header, footer {
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+footer {
+    margin-top: 10px;
+}
+
+footer p {
+    font-weight: 400;
+}
+
 h1,h2 {
-    color: var(--color-primary)
+    color: var(--color-primary);
+    justify-self: center;
 }
 
 button {
@@ -43,6 +52,11 @@ ul {
     display: flex;
 }
 
+a:hover {
+    color:#0c0b0a;
+    opacity: 1;
+}
+
 li {
     margin: 20px;
 }
@@ -53,6 +67,36 @@ li {
     align-items:center;
 }
 
-p {
+.primary-content p {
     margin-top: 5px;
+}
+
+.primary-content img {
+    width: 600px;
+    height: 600px;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.product-content p {
+    margin-top: 5px;
+}
+
+.product-content img {
+    width: 600px;
+    height: 600px;
+}
+
+.product-info div {
+    padding-top: 40px;
 }
