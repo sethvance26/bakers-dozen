@@ -5,13 +5,12 @@
     --color-primary: #b48663;
     --color-accent: #b19274;
     --color-text: #202020;
-    --color-form: #cdcdcd;
 }
 
 body {
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header, footer {
@@ -103,7 +102,7 @@ textarea {
 }
 
 form {
-    background-color: var(--color-form);
+    background-color: var(--color-accent);
     border: 1px solid;
     padding: 8px;
     border-radius: 4px;
@@ -123,15 +122,11 @@ form button {
     }
 }
 
-@media (min-width: 768px) {
-    ul {
-        flex-direction: row;
-    }
-}
+@media (max-width: 767px) {
 
-@media (max-width: 768px) {
     ul {
         padding:0;
+        flex-direction: row;
     }
 
     .primary-content img {
