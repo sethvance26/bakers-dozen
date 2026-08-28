@@ -115,6 +115,31 @@ form button {
     padding: 4px;
 }
 
+.product-selection {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+
+.product-selection button {
+    padding: 6px;
+}
+
+#favorite-product {
+    padding: 12px;
+    margin: 10px;
+}
+
+.product-selection label {
+    font-style: italic;
+}
+
+#saved-product {
+    padding-top: 10px;
+}
+
+
 /* Media Queries */
 
 @media(min-width:1024px) {
