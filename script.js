@@ -65,5 +65,5 @@ function validateInquiry(event) {
 const contactForm = document.querySelector("form");
 
 if (contactForm) {
-    contactForm.addEventListenerListener("submit", validateInquiry);
+    contactForm.addEventListener("submit", validateInquiry);
 }
